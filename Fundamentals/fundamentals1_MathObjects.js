@@ -46,7 +46,7 @@ console.log(z4);
 console.log(a4);
 
 
-//Using Math.round() - function returns the value of a number rounded to the nearest integer.
+// Using Math.round() - function returns the value of a number rounded to the nearest integer.
 // Example(s):
 var x5 = Math.round(1.49); // will return 1. This is the major difference between Math.Ceil() and Math.Round().
 var y5 = Math.round(1.5); // will return 2.
@@ -54,3 +54,57 @@ var z5 = Math.round(-1.3); // will return -1.
 console.log(x5);
 console.log(y5);
 console.log(z5);
+
+
+// Using Math.random() - returns a random number.
+// NOTE:
+// Example(s):
+// Getting a random number (including decimals) in between 0 and 10.
+var x6 = Math.random() * 10;
+// Getting a whole random number in between 1 and 10.
+var y6 = Math.floor(Math.random() * 10) + 1;
+// Getting a whole random number in between 0 and 20, but using Math.round() instead of Math.floor().
+var z6 = Math.round(Math.random() * 20);
+console.log(x6);
+console.log(y6);
+console.log(z6);
+
+
+
+// Using Math.pow(x, y) - returns the value of x to the power of y.
+// Example(s):
+var x7 = Math.pow(8, 2); // returns 64.
+var y7 = Math.pow(4, 6); // returns 4096.
+var z7 = Math.pow(9, 4); // returns 6561.
+console.log(x7);
+console.log(y7);
+console.log(z7);
+
+
+// Using Math.sqrt(x) returns the square root of x.
+// Example(s):
+var x8 = Math.sqrt(100); // returns 10.
+var y8 = Math.sqrt(64); // returns 8.
+var z8 = Math.sqrt(7); // returns 2.6457513110645907.
+console.log(x8);
+console.log(y8);
+console.log(z8);
+
+
+
+// Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments:
+var minimumValue = Math.min(1, -3, 8.35, -6); // returns -6.
+var maximumValue = Math.max(0, -2, 27, 9, 0.5) // returns 27.
+console.log(minimumValue);
+console.log(maximumValue);
+
+
+// Using Modulous:
+// The modulus operator returns the remainder after division.
+var xx = 10
+var yy = 4
+var zz = xx % yy;
+console.log(zz); // returns 2.
+// Another Example:
+let a = 5
+console.log(a % 2); // returns 1.
