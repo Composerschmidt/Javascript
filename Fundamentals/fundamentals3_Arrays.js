@@ -30,20 +30,20 @@ console.log(b);
 var c = ['S','T','R','I','N','G'];
 var d = c.join('');
 var e = c.join('-');
-console.log(d);
-console.log(e);
+console.log(d); // returns STRING.
+console.log(e); // returns S-T-R-I-N-G.
 
 // Using .map() - this method creates a new array with the results of calling a provided function on every element in the calling array.
 // Example:
 var f = [2.24, 4.9, 9.1, 2.52];
 var g = f.map(Math.round);
-console.log(g);
+console.log(g); // returns [ 2, 5, 9, 3 ].
 
 
 // Using .filter() - method creates a new array with all elements that pass the test implemented by the provided function.
 // Example:
 var h = [1, 5, 99, 30];
 var lowestnumber = h.filter(function(number){
-  return number < 10;
+  return number < 10; // returns [ 1, 5 ].
 });
 console.log(lowestnumber);

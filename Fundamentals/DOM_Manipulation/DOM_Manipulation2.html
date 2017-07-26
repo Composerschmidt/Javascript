@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+        <ol id="favoriteTeams">
+            <li>Green Bay Packers</li>
+            <li>New England Patriots</li>
+            <li>Kansas City Chiefs</li>
+        </ol>
+    <script>
+        let new_team = document.createElement("li");
+        // create an empty li
+        new_team.innerHTML = "LA Chargers";
+        // modify it's innerHTML content with the a string
+        document.getElementById("favoriteTeams").appendChild(new_team);
+        // append our new DOM element to the id 'fruit'
+    </script>
+  </body>
+</html>
