@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS DOM I</title>
+</head>
+<body>
+
+    <ul id="main">
+        <!-- this is empty-->
+    </ul>
+    <div id="target">
+
+    </div>
+
+    <script>
+        // Part I
+        function appendList(array, id){
+           for (let i = 0; i<array.length; i++){
+                let e = document.createElement("li")
+                e.innerHTML = array[i];
+                document.getElementById(id).appendChild(e);
+           }
+        };
+
+        // This will create a new element and add (append) names from a given array, into that new created element(s).
+        function superAppend(array, element, id){
+            for (let i = 0; i < array.length; i++){
+                let e = document.createElement(element);
+                e.innerHTML = array[i];
+                document.getElementById(id).appendChild(e);
+            }
+        }
+
+        let students = ["Steffen", "Alex", "Stu", "John"];
+        let target_id = "main";
+
+        appendList(students, target_id);
+        superAppend(students, "h1", "target");
+    </script>
+
+</body>
+</html>
