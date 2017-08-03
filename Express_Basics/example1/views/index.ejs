@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>First Express App</title>
+  </head>
+  <body>
+      <h1>Hello Example 1 Express app.. "Hello World!"</h1>
+      <% for(var i in packers){ %>
+          <% if(packers[i].name == "Aaron Rodgers"){ %>
+            <li><%= packers[i].name %></li>
+          <% } %>
+      <% } %>
+  </body>
+</html>
